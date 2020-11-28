@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <title>Battery Finder Program</title>
+  </head>
+  <body>
+    <div class="bg-dark h-100 py-5">
+      <div class="card container py-2 bg-info">
+        <h1 class="card-title text-center text-white">
+          Battery Finder Program
+        </h1>
+        <div class="bg-light container my-2">
+          <div class="form-group mt-2">
+            <label for="brand"><h3>Step 1 : Select Your Brand</h3></label>
+            <select class="form-control col-6" id="brand">
+              <option>Choose brand</option>
+              <!-- JSON data -->
+            </select>
+          </div>
+          <div class="form-group my-2">
+            <label for="model"><h3>Step 2 : Select Your Model</h3></label>
+            <select class="form-control col-6" id="model">
+              <option>Choose model</option>
+              <!-- JSON data -->
+            </select>
+          </div>
+          <label for="power"><h3>Step 3 : Choose Your Power Consumption</h3></label>
+          <div class="input-group mb-3">
+            <input
+              id="power"
+              type="text"
+              class="form-control col-2"
+              placeholder="0"
+            />
+            <div class="input-group-append">
+              <span class="input-group-text"> W </span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="btn btn-outline-dark mx-2 col-6" id="button">
+              Search Battery
+            </div>
+          </div>
+          <div class="my-2">
+            <h3>Step 4 : Choose Your Battery</h3>
+            <table class="table table-hover">
+              <tbody id="showBatteries">
+                <!-- JSON data -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    </body>
+</html>
