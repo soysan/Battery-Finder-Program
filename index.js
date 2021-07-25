@@ -158,7 +158,7 @@ const camera =
 
 // errors
 let message = document.createElement("div");
-message.innerHTML = `<h2><span class="text-danger font-weight-bold">Your power consumpution is out of range</span></h2>`;
+message.innerHTML = `<h2><span class="text-danger font-weight-bold">Your power consumption is out of range</span></h2>`;
 let message2 = document.createElement("div");
 message2.innerHTML = `<h2><span class="text-danger font-weight-bold">There isn't matched battery</span></h2>`;
 
@@ -252,7 +252,7 @@ function showCapableBatteries() {
 // render the result
 
 document.getElementById("button").addEventListener("click", () => {
-    console.log(showCapableBatteries())
+    showCapableBatteries()
 });
 
 
