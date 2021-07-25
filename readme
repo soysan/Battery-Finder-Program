@@ -1,2 +1,0 @@
-#Battery Finder Program
-JSON file 形式のCamera brand, modelと消費電力を0 <= x =< 100 で Userが選択し、JSON file にある条件にあったBatteryが画面に表示される。
